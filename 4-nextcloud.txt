@@ -1,0 +1,16 @@
+<VirtualHost *:88>
+ServerName nextcloud.fortis-scientia.com
+DocumentRoot /var/www/html/nextcloud
+
+<Directory /var/www/html/nextcloud/>
+require all granted
+options FollowSymlinks MulitViews
+AllowOverride All
+<Ifmodule mod_dav.c>
+Dav off
+</Ifmodule>
+</Directory>
+
+ErrorLog /var/log/apache2/nextcloud.fortis-scientia.com.error_log
+CustomLog /var/log/apache2/nextcloud.fortis-scientia.com.access_cog common
+</VirtualHost>
