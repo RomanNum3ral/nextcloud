@@ -1,0 +1,4 @@
+sudo a2ensite nextcloud.conf
+sudo a2enmod rewrite
+sudo a2dissite 000-default.conf
+sudo apachectl -t
