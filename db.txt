@@ -1,0 +1,4 @@
+create database nextcloud;
+grant all privileges on nextcloud.* to 'nextcloud'@'localhost' identified by 'B1ackBandana101!';
+flush privileges;
+exit
